@@ -1,17 +1,17 @@
-Libraries
+<h1>Libraries</h1>
 
-numpy: for making arrays and numeral do likes matrix, means and etc.
-matplotlib.pyplot: for ploting and show items
-sklearn.linear_model import LinearRegression: for making linear predict
--> methods :: fit: for fiting to model
-	      predict: for predicting
-	      score: for getting score of the model
-sklearn.model_selection import train_test_split: for making test and train
-sklearn.preprocessing import StandardScaler: for normolize datas 
--> methods :: fit_transform(data)
-	      transform(data)
-pandas: for reading .csv files
--> method :: read_csv("Files Adress)
-	     head()
-	     values: convert to a numpy array
-sklearn,preprocing import LabelEncoder
+<b>numpy:</b> for making arrays and numeral do likes matrix, means and etc.<br>
+<b>matplotlib.pyplot:</b> for ploting and show items<br>
+<b>sklearn.linear_model import LinearRegression:</b> for making linear predict<br>
+-> <b><i>methods ::</i></b> <i>fit:</i> for fiting to model<br>
+	      <i>predict:</i> for predicting<br>
+	      <i>score:</i> for getting score of the model<br>
+<b>sklearn.model_selection import train_test_split:</b> for making test and train<br>
+<b>sklearn.preprocessing import StandardScaler:</b> for normolize datas<br>
+-> <b><i>methods ::</i></b> <i>fit_transform(data)<br>
+	      transform(data)</i><br>
+<b>pandas:</b> for reading .csv files <br>
+-> <b><i>method ::</i></b> <i>read_csv("Files Adress)<br>
+	     head()<br>
+	     values:</i> convert to a numpy array<br>
+sklearn,preprocing import LabelEncoder<br>
