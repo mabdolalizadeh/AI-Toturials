@@ -1,4 +1,4 @@
-Libraries
+# Libraries
 
 numpy: for making arrays and numeral do likes matrix, means and etc.
 matplotlib.pyplot: for ploting and show items
