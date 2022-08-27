@@ -4,6 +4,7 @@
 > some note for working with AI.
 
 - [Libraries](#libraries)
+- [Notes](#notes)
 <br>
 
 # LIBRARIES
@@ -150,4 +151,19 @@ datas.head()
 3. making array  
 ```Python
 datas_array = datas.values
+```  
+4. info tell about features
+```Py
+datas.info()
+```  
+5. describe tell about mean, std, q1, q2, q3 and etc
+```Py
+datas.describe()
 ```
+6. count of value
+```Py
+datas["Name of cloumn"].values_counts()
+```
+
+# NOTES
+- **your model must be normal:** for example if you have 2 kind of datas. it must be 50% kind 1 an 50% kind 2.
