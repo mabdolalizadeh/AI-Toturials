@@ -14,3 +14,4 @@ pandas: for reading .csv files
 -> method :: read_csv("Files Adress)
 	     head()
 	     values: convert to a numpy array
+sklearn,preprocing import LabelEncoder
