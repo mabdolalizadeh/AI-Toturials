@@ -1,7 +1,7 @@
 # ABOUT
 ---
 
-> some note for working with AIs.
+> some note for working with AI.
 
 - [Libraries](#libraries)
 <br>
@@ -20,13 +20,19 @@ for numeral operation in *Python*<br>
 import numpy as np
 ```  
 ### Methods
--
+
 1. for making array  
-	`np.array(List)`   
+	```Py
+	np.array(List)
+	```   
 2. for mean of array  
-	`np.mean(array)`
-3. for sum all indexes  
-	`np.sum(array)`
+	```Py
+	np.mean(array)
+	```  
+3. for sum all indexes    
+	```Py
+	np.sum(array)
+	```  
 
 ## Matplotlib
 for making an chart or plot with *Python*  
@@ -35,16 +41,20 @@ for making an chart or plot with *Python*
 import matplotlib.pyplot as plt
 ```  
 ### Methods
--
+
 1. for making chart  
-	`plt.plot(x,y)`   
+	```Py
+	plt.plot(x,y)
+	```  
 2. for show 
-	`plt.show()`
+	```Py 
+	plt.show()
+	```  
 
 ## Scikit Learn
 for machine learning in *Python*  
 ### Classes
--
+
 - **linear predict**
     ```Python
     from sklearn.linear_model import LinearRegression
@@ -52,9 +62,13 @@ for machine learning in *Python*
     ```  
 #### Methods
 1. for fiting your model  
-`model_linear.fit(x_array,y_array)`  
+```Py
+model_linear.fit(x_array,y_array)
+```  
 2. for predict  
-`y_prd = model_linear.predict(x_array)`  
+```Py
+y_prd = model_linear.predict(x_array)
+```  
 
 - **logestic predict**
     ```Python
@@ -63,9 +77,13 @@ for machine learning in *Python*
     ```  
 #### Methods:
 1. for fiting your model  
-`model_logestic.fit(x_array,y_array)`  
+```Py
+model_logestic.fit(x_array,y_array)
+```  
 2. for predict  
-`y_prd = model_logestic.predict(x_array)`  
+```Py
+y_prd = model_logestic.predict(x_array)
+```  
 
 - **normalize**  
  ```Python
@@ -74,9 +92,13 @@ for machine learning in *Python*
  ```  
  #### Methods:
 1. for fiting  
-`norm.fit(x_array)`  
+```Py
+norm.fit(x_array)
+```  
 2. for normalizing  
-`x_norm = norm.transform(x_array)`  
+```Py
+x_norm = norm.transform(x_array)
+```  
 
 - **encoding**
 ```Python
@@ -85,12 +107,16 @@ label_encoder = LabelEncoder()
 ```
 #### Methods:
 1. for fiting  
-`label_encoder.fit(x_array)`  
+```Py
+label_encoder.fit(x_array)
+```  
 2. for normalizing  
-`x_array_encoded = label_encoder.transform(x_array)`  
+```Py
+x_array_encoded = label_encoder.transform(x_array)
+```  
 
 ### Methods
--
+
 1. for split datas  
 ```Python
 from sklearn.model_selection import train_test_split
@@ -105,8 +131,14 @@ import pandas as pd
 ```
 ### Methods
 1. reading  
-`datas = pd.read_csv("File Adress")`  
+```Py
+datas = pd.read_csv("File Adress")
+```  
 2. show
-`datas.head()`  
+```Py
+datas.head()
+```  
 3. making array  
-`datas_array = datas.values`
+```Python
+datas_array = datas.values
+```
