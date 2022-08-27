@@ -122,7 +122,16 @@ x_array_encoded = label_encoder.transform(x_array)
 from sklearn.model_selection import train_test_split
 x_train, y_train, x_test, y_test = train_test_split(x_array,y_array,test_size=0.2)
 ```  
-
+2. for mean squarded error(mse)
+```Py
+from sklearn.metrics import mean_squared_error as mse
+mse(x_array)
+```
+3. for mean absolute error(mae)
+```Py
+from sklearn.metrics import mean_absolute_error as mae
+mae(x_array)
+```
 ## Pandas
 for reading csv in python
 ***how to use:***  
