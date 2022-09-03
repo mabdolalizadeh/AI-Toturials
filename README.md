@@ -3,24 +3,28 @@
 
 > some note for working with AI.
 
+# Parts
+- [Linears](#linears)
+- [Neural-Networks](#neural-networks)
+# LINEARs
 - [Libraries](#libraries)
 - [Notes](#notes)
 <br>
 
-# LIBRARIES
+## LIBRARIEs
 ---
 - [Numpy](#numpy)
 - [Matplotlib](#matplotlib)
 - [Scikit Learn](#scikit-learn)
 - [Pandas](#pandas)
 
-## Numpy
+### Numpy
 for numeral operation in *Python*<br>
 ***how to use:***<br>
 ```Py
 import numpy as np
 ```  
-### Methods
+#### Methods
 
 1. for making array  
 	```Py
@@ -35,13 +39,13 @@ import numpy as np
 	np.sum(array)
 	```  
 
-## Matplotlib
+### Matplotlib
 for making an chart or plot with *Python*  
 ***how to use:***  
 ```Py 
 import matplotlib.pyplot as plt
 ```  
-### Methods
+#### Methods
 
 1. for making chart  
 	```Py
@@ -52,16 +56,16 @@ import matplotlib.pyplot as plt
 	plt.show()
 	```  
 
-## Scikit Learn
+### Scikit Learn
 for machine learning in *Python*  
-### Classes
+#### Classes
 
 - **linear predict**
     ```Python
     from sklearn.linear_model import LinearRegression
     model_linear = LinearRegression()
     ```  
-#### Methods
+##### Methods
 1. for fiting your model  
 ```Py
 model_linear.fit(x_array,y_array)
@@ -76,7 +80,7 @@ y_prd = model_linear.predict(x_array)
     from sklearn.linear_model import LogisticRegression
     model_logestic = LogisticRegression()
     ```  
-#### Methods:
+##### Methods:
 1. for fiting your model  
 ```Py
 model_logestic.fit(x_array,y_array)
@@ -91,7 +95,7 @@ y_prd = model_logestic.predict(x_array)
  from sklearn.preprocessing import StandardScaler
  norm = StandardScaler()
  ```  
- #### Methods:
+ ##### Methods:
 1. for fiting  
 ```Py
 norm.fit(x_array)
@@ -106,7 +110,7 @@ x_norm = norm.transform(x_array)
 from sklearn.preprocessing import LabelEncoder
 label_encoder = LabelEncoder()
 ```
-#### Methods:
+##### Methods:
 1. for fiting  
 ```Py
 label_encoder.fit(x_array)
@@ -115,8 +119,17 @@ label_encoder.fit(x_array)
 ```Py
 x_array_encoded = label_encoder.transform(x_array)
 ```  
-
-### Methods
+3. for scoring
+```Py
+from sklearn.metrics import confusion_matrix as cm
+cm(y_test, y_test_prd)
+```
+4. for information of scoring
+```Py
+from sklearn.metrics import classification_report as cr
+cr(y_test, y_test_prd)
+```
+#### Methods
 
 1. for split datas  
 ```Python
@@ -133,13 +146,13 @@ mse(x_array)
 from sklearn.metrics import mean_absolute_error as mae
 mae(x_array)
 ```
-## Pandas
+### Pandas
 for reading csv in python
 ***how to use:***  
 ```Python 
 import pandas as pd
 ```
-### Methods
+#### Methods
 1. reading  
 ```Py
 datas = pd.read_csv("File Adress")
@@ -165,5 +178,12 @@ datas.describe()
 datas["Name of cloumn"].values_counts()
 ```
 
-# NOTES
-- **your model must be normal:** for example if you have 2 kind of datas. it must be 50% kind 1 an 50% kind 2.
+## NOTEs
+- **your model must be normal:** for example if you have 2 kind of datas. it must be 50% kind 1 an 50% kind 2.  
+
+# NEURAL NETWORKS
+- [Libraries](#libraries-1)
+- [Notes](#notes-1)
+
+## LIBRARIEs
+## NOTEs
