@@ -5,7 +5,7 @@
 
 # Parts
 - [Linears](#linears)
-- [Neural-Networks](#neural-networks)
+- [Artificial-Neural-Networks](#artificial-neural-networks)
 # LINEARs
 - [Libraries](#libraries)
 - [Notes](#notes)
@@ -181,9 +181,20 @@ datas["Name of cloumn"].values_counts()
 ## NOTEs
 - **your model must be normal:** for example if you have 2 kind of datas. it must be 50% kind 1 an 50% kind 2.  
 
-# NEURAL NETWORKS
+# Artificial NEURAL NETWORKS
 - [Libraries](#libraries-1)
 - [Notes](#notes-1)
 
 ## LIBRARIEs
 ## NOTEs
+### Batch size
+How many data goes to layers
+### Activation functions
+ 1. the best for AFs is *relu function*
+ 2. *tanh* is another one
+ 3. *linears* are another 
+ 4. you can use *sigmoid*
+ ### Learning rate
+ how can you recive the best value(extermum of optimization)
+ ### Epoch
+ learning rate must be high in first and low in last
