@@ -186,6 +186,59 @@ datas["Name of cloumn"].values_counts()
 - [Notes](#notes-1)
 
 ## LIBRARIEs
+- [Transflow](#transflow)
+### Transflow
+1. for a model of ANN
+```Py
+from transorflow.keras.model import Sequntial
+from transorflow.keras.layers import Dense
+model = Sequntial()
+#1st layer
+model.add(Dense(units = 16, activation = 'relu'))
+# units means counts of layers and activation means the method
+#2nd layer
+model.add(Dense(4, 'relu'))
+#final layer
+model.add(Dense(1, 'linear'))
+#for optimizing
+model.compile(optimizer = "adam", loss = "mse")
+```
+2. for fitting
+```Py
+result = model.fit(x_train, y_train, epochs = 128, validation_data = [x_val, y_val])
+```
+3. for getting summary of model
+```Py
+model.summary()
+```
+4. for predict
+```Py
+model.predict()
+```
+5. for ploting losts
+```Py
+plt.plot(result.history['loss'], label = 'train')
+plt.plot(result.history['val_loss'], label = 'val')
+plt.legend()
+plt.show()
+```
+6. for callback or stopping training
+```Py
+from tensorflow.keras.callbacks import EarlyStopping
+early _stopping = EarlyStopping(patience = 5, verbose = 1, restore_best_weights = True)
+# patience means after how many no loss stop.
+result = model.fit(x_train, y_train, epochs = 128, validation_data = [x_val, y_val], callbacks = early_stopping)
+```
+7. for saving model
+```Py
+model.save("Adress/File.h5")
+# format of these models are .h5
+```
+8. for loading another model
+```Py
+from tensorflow.keras.models import load_model
+new_model = load_model("Adress/File.h5")
+```
 ## NOTEs
 ### Batch size
 How many data goes to layers
