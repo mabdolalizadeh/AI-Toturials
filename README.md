@@ -243,10 +243,10 @@ new_model = load_model("Adress/File.h5")
 ### Batch size
 How many data goes to layers
 ### Activation functions
- 1. the best for AFs is *relu function*
- 2. *tanh* is another one
- 3. *linears* are another 
- 4. you can use *sigmoid*
+ 1. the best for AFs is ***relu function***
+ 2. ***tanh*** is another one
+ 3. ***linears*** are another 
+ 4. you can use ***sigmoid***
  ### Learning rate
  how can you recive the best value(extermum of optimization)
  ### Epoch
