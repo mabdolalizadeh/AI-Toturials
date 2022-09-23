@@ -22,5 +22,7 @@ normalize = StandardScaler()
 x_encoded = encoder.fit_transform(inputs)
 x_norm = normalize.fit_transform(x_encoded)
 
-x_train, y_train, x_test, y_test = tts(x_norm, output, test_size=0.2)
+x_train, x_val_test, y_train, y_val_test = tts(x_norm, output, test_size=0.2)
+x_val, x_test, y_val, y_test = tts(x_val_testm, y_val_test, test_size=0.33)
 
+result = model.fit()
