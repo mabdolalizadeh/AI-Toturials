@@ -26,3 +26,4 @@ x_train, x_val_test, y_train, y_val_test = tts(x_norm, output, test_size=0.2)
 x_val, x_test, y_val, y_test = tts(x_val_test, y_val_test, test_size=0.33)
 
 result = model.fit(x_train, y_train, epochs=128, validation_data=[x_val, y_val])
+y_predicted = model.predict(x_test)
