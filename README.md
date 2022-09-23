@@ -186,12 +186,12 @@ datas["Name of cloumn"].values_counts()
 - [Notes](#notes-1)
 
 ## LIBRARIEs
-- [Transflow](#transflow)
+- [Tensorflow](#transflow)
 ### Transflow
 1. for a model of ANN
 ```Py
-from transorflow.keras.model import Sequntial
-from transorflow.keras.layers import Dense
+from tensorflow.keras.model import Sequntial
+from tensorflow.keras.layers import Dense
 model = Sequntial()
 #1st layer
 model.add(Dense(units = 16, activation = 'relu'))
