@@ -238,7 +238,18 @@ model.save("Adress/File.h5")
 ```Py
 from tensorflow.keras.models import load_model
 new_model = load_model("Adress/File.h5")
-```
+```  
+### Joblib
+1. saving normalizer
+```Py
+from joblib import dump
+dump(normalizer, "Adress")
+```  
+2. loading normalizer
+```Py
+from joblib import load
+normalizer = load("Adress")
+```  
 ## NOTEs
 ### Batch size
 How many data goes to layers
