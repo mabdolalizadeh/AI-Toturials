@@ -183,6 +183,8 @@ datas["Name of cloumn"].values_counts()
 
 # Artificial NEURAL NETWORKS
 - [Libraries](#libraries-1)
+- [Joblib](#joblib)
+- [Open-CV](#open-cv)
 - [Notes](#notes-1)
 
 ## LIBRARIEs
@@ -250,6 +252,32 @@ dump(normalizer, "Adress")
 from joblib import load
 normalizer = load("Adress")
 ```  
+### Open CV
+> its for image
+how to import
+```Py
+import cv2
+```  
+how to load  
+```Py
+img = cv2.imread("Adress")
+``` 
+to show image  
+```Py
+cv2.imshow("name", img)
+# name is the name of the window of the img
+cv2.waitKey(int time)
+# int time is number to how many second window wait for waiting at all use 0
+``` 
+to change color mode
+```Py
+img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+```
+for resizing
+```Py
+img2 = cv2.resize(img, (Y,X))
+```
 ## NOTEs
 ### Batch size
 How many data goes to layers
