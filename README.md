@@ -38,7 +38,10 @@ import numpy as np
 	```Py
 	np.sum(array)
 	```  
-
+4. for change rate of array to 8 bit (specilly for images)
+	```Py
+	.astype(np.uint8)
+	```
 ### Matplotlib
 for making an chart or plot with *Python*  
 ***how to use:***  
