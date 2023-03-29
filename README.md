@@ -281,6 +281,37 @@ for resizing
 ```Py
 img2 = cv2.resize(img, (Y,X))
 ```
+to waiting for closing
+```Py
+cv2.waitKey(number)
+# number is time in ms to wait. 0 means infinity
+```
+
+to change color mode
+```py
+cv2.cvtColor(img, cv2.SOMTHING)
+# img is the image you want to change and SOMETHING is the mode you want to change for example COLOR_BGR2GRAY
+```
+for destroying windows you make
+```py
+cv2.destroyWindow("NAME OF WINDOWS")
+# or
+cv2.destroyAllWindows()
+```
+for use webcam
+```py
+cap = cv2.VideoCapture(0)
+# 0 means yout laptop webcam for wireless webcam most give the IP address
+while True:
+	ret, frame = cap.read()
+	if ret:
+		cv2.imshow("Webcam", frame)
+		if cv2.waitKey(1) = ord('q'):
+			break
+
+cv2.destroyAllWindows()
+cap.release()
+```
 ## NOTEs
 ### Batch size
 How many data goes to layers
