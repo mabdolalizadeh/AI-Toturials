@@ -312,6 +312,16 @@ while True:
 cv2.destroyAllWindows()
 cap.release()
 ```
+for miroring
+```py
+cv2.flip(name,axis)
+# name means name of the array and axis is the axis number 0 rows
+# 1 cloumns and 2 deeps
+```
+for put text on photo
+```py
+cv2.putText(image,"TexT",(x,y),font,fontScale)
+```
 ## NOTEs
 ### Batch size
 How many data goes to layers
