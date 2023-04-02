@@ -6,7 +6,7 @@
 # Parts
 - [Linears](#linears)
 - [Artificial-Neural-Networks](#artificial-neural-networks) 
--[Machine-Vision](#machine-vision)
+- [Machine-Vision](#machine-vision)
 # LINEARs
 - [Libraries](#libraries)
 - [Notes](#notes)
