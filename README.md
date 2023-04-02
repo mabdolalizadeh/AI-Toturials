@@ -6,6 +6,7 @@
 # Parts
 - [Linears](#linears)
 - [Artificial-Neural-Networks](#artificial-neural-networks)
+-[Machine-Vision](#machine-vision)
 # LINEARs
 - [Libraries](#libraries)
 - [Notes](#notes)
@@ -255,6 +256,25 @@ dump(normalizer, "Adress")
 from joblib import load
 normalizer = load("Adress")
 ```  
+
+## NOTEs
+### Batch size
+How many data goes to layers
+### Activation functions
+ 1. the best for AFs is ***relu function***
+ 2. ***tanh*** is another one
+ 3. ***linears*** are another 
+ 4. you can use ***sigmoid***
+ ### Learning rate
+ how can you recive the best value(extermum of optimization)
+ ### Epoch
+ learning rate must be high in first and low in last
+
+ # Machine Vision
+
+ ## Libraries
+-[Open-CV](#open-cv)
+
 ### Open CV
 > its for image
 how to import
@@ -322,15 +342,3 @@ for put text on photo
 ```py
 cv2.putText(image,"TexT",(x,y),font,fontScale)
 ```
-## NOTEs
-### Batch size
-How many data goes to layers
-### Activation functions
- 1. the best for AFs is ***relu function***
- 2. ***tanh*** is another one
- 3. ***linears*** are another 
- 4. you can use ***sigmoid***
- ### Learning rate
- how can you recive the best value(extermum of optimization)
- ### Epoch
- learning rate must be high in first and low in last
