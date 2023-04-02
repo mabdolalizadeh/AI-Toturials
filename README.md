@@ -272,7 +272,7 @@ How many data goes to layers
  # Machine Vision
 
  ## Libraries
--[Open-CV](#open-cv)
+- [Open-CV](#open-cv)
 
 ### Open CV
 > its for image
