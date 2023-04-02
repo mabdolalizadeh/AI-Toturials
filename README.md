@@ -342,3 +342,8 @@ for put text on photo
 ```py
 cv2.putText(image,"TexT",(x,y),font,fontScale)
 ```
+for detecting face
+```py
+detect = cv2.CascadeClassifire("Model Address")
+result = detect.detectMultiScale()
+```
