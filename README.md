@@ -5,7 +5,7 @@
 
 # Parts
 - [Linears](#linears)
-- [Artificial-Neural-Networks](#artificial-neural-networks)
+- [Artificial-Neural-Networks](#artificial-neural-networks) 
 -[Machine-Vision](#machine-vision)
 # LINEARs
 - [Libraries](#libraries)
@@ -187,12 +187,11 @@ datas["Name of cloumn"].values_counts()
 
 # Artificial NEURAL NETWORKS
 - [Libraries](#libraries-1)
-- [Joblib](#joblib)
-- [Open-CV](#open-cv)
 - [Notes](#notes-1)
 
 ## LIBRARIEs
-- [Tensorflow](#transflow)
+- [Tensorflow](#transflow) 
+- [Joblib](#joblib)
 ### Transflow
 1. for a model of ANN
 ```Py
