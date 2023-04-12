@@ -351,3 +351,9 @@ for blur image
 blur = cv2.GaussianBlur(img, quality, 0)
 # quality is a couple that show the how blur add to image
 ```
+for 2D filters
+```py
+filtered_image = cv2.filter2D(image, -1, kernel)
+# -1 means get same size as image
+# kernel its matrix of the filter you want for example blur, sobel and etc.
+```
