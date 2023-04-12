@@ -346,3 +346,8 @@ for detecting face
 detect = cv2.CascadeClassifire("Model Address")
 result = detect.detectMultiScale()
 ```
+for blur image
+```py
+blur = cv2.GaussianBlur(img, quality, 0)
+# quality is a couple that show the how blur add to image
+```
