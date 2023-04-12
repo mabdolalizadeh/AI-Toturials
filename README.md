@@ -356,4 +356,27 @@ for 2D filters
 filtered_image = cv2.filter2D(image, -1, kernel)
 # -1 means get same size as image
 # kernel its matrix of the filter you want for example blur, sobel and etc.
+# kernel of sharpness is:
+# [[0, -1, 0],
+# [-1, 5, -1],
+# [0, -1, 0]]
+```
+for getting edges of image
+```py
+edges = cv2.Canny(image, start, end)
+# start is start of range for example start range of normal image is 0
+# end is end of range for example end range of normal image is 255
+```
+for finding circle
+```py
+circle = cv2.HoughCircles(image, cv2.HOUGH_GRADIANT, 1.2, mindist)
+# mindist is the minimum distance you guess has a circle
+```
+for getting a gif or many frames and show
+```py
+for i in range(first_frame, last_frame):
+	image = cv2.imread(f"Adrress/{i}.png")
+	cv2.imshow("name", image)
+
+# first_frame means name of first picture and last_frame means name of last image + 1
 ```
